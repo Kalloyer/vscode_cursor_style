@@ -1,0 +1,15 @@
+.vscode/**
+.vscode-test/**
+.git/**
+.gitignore
+.DS_Store
+Thumbs.db
+*.tmp
+*.temp
+*.log
+*.vsix
+.venv/**
+__pycache__/**
+scripts/**
+examples/**
+node_modules/**

@@ -1,0 +1,48 @@
+{
+  "name": "cursor-style-by-kalleu",
+  "displayName": "Cursor Style by Kalleu",
+  "description": "Tema escuro moderno para VS Code inspirado em um visual clean e produtivo",
+  "version": "0.0.3",
+  "publisher": "Kalloyer",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "theme",
+    "dark theme",
+    "productivity",
+    "clean",
+    "cursor style"
+  ],
+  "icon": "images/icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SEU_USUARIO/cursor-style-by-kalleu.git"
+  },
+  "homepage": "https://github.com/SEU_USUARIO/cursor-style-by-kalleu#readme",
+  "bugs": {
+    "url": "https://github.com/SEU_USUARIO/cursor-style-by-kalleu/issues"
+  },
+  "contributes": {
+    "themes": [
+      {
+        "label": "Cursor Style by Kalleu",
+        "uiTheme": "vs-dark",
+        "path": "./themes/cursor-style-by-kalleu-color-theme.json"
+      }
+    ]
+  },
+  "scripts": {
+    "build": "node -e \"const fs=require('fs'); JSON.parse(fs.readFileSync('themes/cursor-style-by-kalleu-color-theme.json','utf8')); console.log('Theme JSON válido.');\"",
+    "convert-theme": "python scripts/convert_settings_to_theme.py",
+    "package": "npx @vscode/vsce package",
+    "publish:patch": "npx @vscode/vsce publish patch"
+  },
+  "devDependencies": {
+    "@vscode/vsce": "^3.6.2"
+  }
+}

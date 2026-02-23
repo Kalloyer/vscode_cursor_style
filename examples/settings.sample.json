@@ -1,0 +1,39 @@
+{
+  "workbench.colorCustomizations": {
+    "editor.background": "#0b0f14",
+    "editor.foreground": "#d6deeb",
+    "activityBar.background": "#0a0f15",
+    "statusBar.background": "#0a0f15"
+  },
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "name": "Sample keywords",
+        "scope": [
+          "keyword",
+          "storage.type"
+        ],
+        "settings": {
+          "foreground": "#ff8da1"
+        }
+      },
+      {
+        "name": "Sample strings",
+        "scope": [
+          "string",
+          "string.quoted"
+        ],
+        "settings": {
+          "foreground": "#c3e88d"
+        }
+      }
+    ]
+  },
+  "editor.semanticTokenColorCustomizations": {
+    "rules": {
+      "variable.readonly": "#ffa07a",
+      "property": "#b8c7ff",
+      "function": "#8be9a8"
+    }
+  }
+}
